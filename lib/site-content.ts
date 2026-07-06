@@ -150,6 +150,15 @@ export const siteContent = {
         "A webcam-based dashboard for live cognitive state estimation from emotion, gaze, iris, and pose signals.",
       details:
         "The system streams browser frames to FastAPI, runs open-source models, computes TESI over a rolling window, and displays emotion, gaze, posture, cognitive state, and history in real time."
+    },
+    {
+      title: "AutoInsight — Autonomous Data Analytics Agent",
+      tag: "AI Agent",
+      href: "https://github.com/SankalpBorse/AutoInsight---A-Data-Analytics-Agent",
+      featured: true,
+      techStack: ["Python", "LangGraph", "Groq", "Pandas", "Plotly", "Pydantic", "Scikit-learn"],
+      summary: "Drop a dataset and a plain-English question — AutoInsight runs a full analysis pipeline autonomously. Profiles, cleans, analyses, visualises, and writes business insights end-to-end.",
+      details: "AutoInsight is a LangGraph-orchestrated agentic pipeline that takes any tabular dataset and a natural language prompt as input and produces a complete data analysis report without manual configuration. An LLM acts as a stateful decision-maker at each stage — choosing the right cleaning strategy, analytics actions, chart types, and insight narrative for the specific dataset and question. The profiler assigns semantic roles (measures, dimensions, datetimes, identifiers) to every column in a single pass, and all downstream stages read from those roles rather than hardcoded column names, making the system fully generalizable across domains. Deterministic Python handles all statistical computation — correlations, IQR outlier detection, KMeans clustering, IsolationForest anomaly detection, and RandomForest regression — while the LLM is used exclusively for routing decisions and writing business-level narratives, ensuring results are numerically exact and reproducible. Every LLM prompt and response is logged verbatim for full auditability."
     }
   ],
   skillGroups: [
